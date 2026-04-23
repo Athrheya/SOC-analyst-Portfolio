@@ -79,7 +79,7 @@ portfolio/
 
 ## 🎓 Education & Certifications
 
-* 🎓 B.E. Computer Science / ICT — SASTRA University
+* 🎓 B.Tech. Computer Science / ICT — SASTRA University — CGPA 7.88
 * ☁️ Microsoft Certified: Azure AI Fundamentals (AI-900)
 
 ---
@@ -89,21 +89,6 @@ portfolio/
 * 📧 Email: [athrheyag@gmail.com](mailto:athrheyag@gmail.com)
 * 🔗 LinkedIn: https://www.linkedin.com/in/athrheya-ganapathi-bb3190259
 * 💻 GitHub: https://github.com/your-username
-
----
-
-## 📌 Future Improvements
-
-* Add dark mode 🌙
-* Deploy using GitHub Pages
-* Add blog section for threat analysis
-* Integrate real-time project demos
-
----
-
-## 📜 License
-
-This project is open-source and available under the MIT License.
 
 ---
 
