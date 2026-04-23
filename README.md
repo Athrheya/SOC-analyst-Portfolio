@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Portfolio
 
-> A modern, responsive cybersecurity [portfolio]() showcasing experience in Security Operations, Incident Response, and Security Automation.
+> A modern, responsive cybersecurity [portfolio](index.html) showcasing experience in Security Operations, Incident Response, and Security Automation.
 
 ---
 
@@ -51,36 +51,6 @@ portfolio/
 
 ---
 
-## ▶️ Usage
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-portfolio.git
-```
-
-2. Open the project:
-
-```bash
-cd your-portfolio
-```
-
-3. Run locally:
-
-* Simply open `index.html` in your browser
-
----
-
-## 💼 Experience Highlight
-
-**SOC Analyst / Security Engineer**
-
-* Threat monitoring across SIEM, EDR/XDR, and network tools
-* Incident response for phishing, malware, and account compromise
-* Playbook automation using SOAR (XSOAR)
-* Detection tuning and threat intelligence integration
-
----
 
 ## 🧪 Projects Included
 
