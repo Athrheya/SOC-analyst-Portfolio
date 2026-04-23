@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Portfolio
 
-> A modern, responsive cybersecurity [portfolio](https://athrheya.github.io/SOC-analyst-Portfolio) showcasing experience in Security Operations, Incident Response, and Security Automation.
+> A modern, responsive cybersecurity [portfolio]([https://athrheya.github.io/SOC-analyst-Portfolio](https://athrheya.github.io/SOC-analyst-Portfolio/)) showcasing experience in Security Operations, Incident Response, and Security Automation.
 
 ---
 
