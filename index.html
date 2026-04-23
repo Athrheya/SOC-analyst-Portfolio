@@ -341,11 +341,64 @@
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
+    /* FLOATING ICONS */
+    .floating-icons { position: fixed; inset: 0; z-index: 5; pointer-events: auto; overflow: hidden; }
+    .float-icon {
+      position: absolute; font-size: 48px; opacity: 0.25;
+      animation: float 6s ease-in-out infinite;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .float-icon-1 { top: 15%; left: 2%; }
+    .float-icon-2 { top: 35%; right: 2%; }
+    .float-icon-3 { top: 55%; left: 2%; }
+    .float-icon-4 { top: 75%; right: 2%; }
+    .float-icon-5 { top: 25%; right: 2%; }
+    .float-icon-6 { top: 65%; left: 2%; }
+    .float-icon-7 { top: 45%; left: 2%; }
+    .float-icon-8 { top: 85%; right: 2%; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(10deg); }
+    }
+
+    @keyframes destroy {
+      0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.25;
+      }
+      50% {
+        transform: scale(1.3) rotate(180deg);
+        opacity: 0.6;
+      }
+      100% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .float-icon.destroyed {
+      animation: destroy 0.6s ease-out forwards !important;
+      cursor: pointer;
+    }
+
+    .float-icon {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .float-icon:hover {
+      transform: scale(1.2);
+      opacity: 0.35;
+    }
+
     @media (max-width: 640px) {
       nav { padding: 1rem 1.25rem; }
       .nav-links { gap: 1.25rem; }
       .nav-links a { font-size: 12px; }
       .projects-grid { grid-template-columns: 1fr; }
+      .float-icon { font-size: 36px; }
     }
   </style>
 </head>
@@ -355,6 +408,17 @@
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
+</div>
+
+<div class="floating-icons" aria-hidden="true">
+  <div class="float-icon float-icon-1">🔐</div>
+  <div class="float-icon float-icon-2">🛡️</div>
+  <div class="float-icon float-icon-3">⚡</div>
+  <div class="float-icon float-icon-4">🔍</div>
+  <div class="float-icon float-icon-5">🌐</div>
+  <div class="float-icon float-icon-6">🔓</div>
+  <div class="float-icon float-icon-7">📊</div>
+  <div class="float-icon float-icon-8">🚨</div>
 </div>
 
 <nav>
@@ -559,6 +623,56 @@
   document.querySelectorAll('.projects-grid, .skills-grid, .ce-grid').forEach(grid => {
     [...grid.children].forEach((child, i) => { child.style.transitionDelay = `${i * 0.12}s`; });
   });
+
+  // Clickable Threat Icons - Destroy on Click
+  document.querySelectorAll('.float-icon').forEach(icon => {
+    icon.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (!this.classList.contains('destroyed')) {
+        this.classList.add('destroyed');
+        
+        // Create particle burst effect with checkmarks
+        const rect = this.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+        
+        for (let i = 0; i < 8; i++) {
+          const particle = document.createElement('div');
+          particle.innerHTML = '✓';
+          particle.style.position = 'fixed';
+          particle.style.left = x + 'px';
+          particle.style.top = y + 'px';
+          particle.style.fontSize = '14px';
+          particle.style.color = '#10b981';
+          particle.style.fontWeight = 'bold';
+          particle.style.pointerEvents = 'none';
+          particle.style.zIndex = '10';
+          
+          const angle = (i / 8) * Math.PI * 2;
+          const distance = 80;
+          const tx = Math.cos(angle) * distance;
+          const ty = Math.sin(angle) * distance;
+          
+          particle.style.animation = `burstOut 0.7s ease-out forwards`;
+          particle.style.setProperty('--tx', tx + 'px');
+          particle.style.setProperty('--ty', ty + 'px');
+          
+          document.body.appendChild(particle);
+          setTimeout(() => particle.remove(), 800);
+        }
+      }
+    });
+  });
+
+  // Add burst animation
+  const burstStyle = document.createElement('style');
+  burstStyle.textContent = `
+    @keyframes burstOut {
+      0% { transform: translate(0, 0) scale(1); opacity: 1; }
+      100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+    }
+  `;
+  document.head.appendChild(burstStyle);
 </script>
 </body>
 </html>
