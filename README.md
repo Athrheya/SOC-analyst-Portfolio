@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Portfolio
 
-> A modern, responsive cybersecurity portfolio showcasing experience in Security Operations, Incident Response, and Security Automation.
+> A modern, responsive cybersecurity [portfolio]() showcasing experience in Security Operations, Incident Response, and Security Automation.
 
 ---
 
