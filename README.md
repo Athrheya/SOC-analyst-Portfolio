@@ -87,8 +87,8 @@ portfolio/
 ## 📬 Contact
 
 * 📧 Email: [athrheyag@gmail.com](mailto:athrheyag@gmail.com)
-* 🔗 LinkedIn: [https://www.linkedin.com/in/athrheya-ganapathi-bb3190259]
-* 💻 GitHub: [https://github.com/your-username](https://github.com/Athrheya)]
+* 🔗 [LinkedIn:](https://www.linkedin.com/in/athrheya-ganapathi-bb3190259)
+* 💻 [GitHub:](https://github.com/Athrheya)
 
 ---
 
