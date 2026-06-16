@@ -70,25 +70,83 @@ portfolio/
 
 ## 🧠 Skills
 
-* **Security Operations:** Incident Response, Threat Detection, Phishing Analysis
-* **Tools:** Splunk, XSOAR, EDR/XDR, Email Security
-* **Programming:** Python, SQL, PowerShell, Bash
-* **ML:** Random Forest, Decision Tree, Feature Engineering
+### 🛡️ Security Operations & Incident Response
+
+* Security Incident Response
+* Alert Triage & Investigation
+* Threat Detection & Analysis
+* Phishing Analysis
+* IOC Validation & Enrichment
+* Email Security Operations
+* Endpoint Security Monitoring
+* Security Monitoring & Event Analysis
+
+### 🔧 Security Tools & Platforms
+
+* Splunk Enterprise
+* Cortex XSOAR
+* Microsoft Defender
+* Microsoft Intune
+* Microsoft Azure
+* EDR/XDR Solutions
+* VirusTotal
+* AbuseIPDB
+* SIEM & SOAR Technologies
+
+### 💻 Scripting & Automation
+
+* Python
+* SQL
+* PowerShell
+* Bash
+* REST APIs
+* Security Automation
+
+### ☁️ Cloud & Microsoft Security
+
+* Microsoft Azure
+* Azure AI Services
+* Identity & Access Management (IAM)
+* Microsoft Security Ecosystem
+
+### 🤖 AI & Machine Learning
+
+* Machine Learning Fundamentals
+* Random Forest
+* Decision Trees
+* Feature Engineering
+* Data Preprocessing
+* AI-Assisted Security Operations
+
+### 📊 Additional Skills
+
+* Dashboard Development
+* Log Analysis
+* Root Cause Analysis
+* Technical Documentation
+* Cross-Functional Collaboration
+* 24×7 SOC Operations
+
 
 ---
 
-## 🎓 Education & Certifications
+### Education
+* 🎓 B.Tech. Information and Communication Technology — SASTRA Deemed University — CGPA: 7.88
 
-* 🎓 B.Tech. Computer Science / ICT — SASTRA University — CGPA 7.88
+### Certifications
+* 🔐 CompTIA Security+ Incident Response & Threat Detection Training
 * ☁️ Microsoft Certified: Azure AI Fundamentals (AI-900)
+* 🛡️ Anthropic Certified: Claude 101
+* 🛡️ Google Certified: Cybersecurity Fundamentals
+
 
 ---
 
 ## 📬 Contact
 
 * 📧 Email: [athrheyag@gmail.com](mailto:athrheyag@gmail.com)
-* 🔗 [LinkedIn:](https://www.linkedin.com/in/athrheya-ganapathi-bb3190259)
-* 💻 [GitHub:](https://github.com/Athrheya)
+* 🔗 [LinkedIn](https://www.linkedin.com/in/athrheya-ganapathi-bb3190259)
+* 💻 [GitHub](https://github.com/Athrheya)
 
 ---
 
